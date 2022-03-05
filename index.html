@@ -358,21 +358,68 @@
 
     <h2>Form</h2>
     <form>
-      <label for="n1">Name</label><br>
-      <input type="text" name="n1" required><br><br>
-      <label for="n2">Age</label><br>
-      <input type="number" name="n2" required><br><br>
-      <label for="n3">Email</label><br>
-      <input type="email" name="n3" required><br><br>
-      <label for="n4">Password</label><br>
-      <input type="password" name="n4" required><br><br>
-      <label for="n5">Date</label><br>
-      <input type="date" name="n5" required><br><br>
-      <label for="n6">Time</label><br>
-      <input type="time" name="n6" required><br><br>
-      <input type="submit" name="n7">
+      <table cellpadding="5px">
+        <tr>
+          <td>
+            <label for="n1">Name</label><br>
+            <input type="text" name="n1" value="Pratik" required readonly><br><br>
+          </td>
+          <td> 
+            <label for="n2">Age</label><br>
+            <input type="number" name="n2" required><br><br>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="n3">Email</label><br>
+            <input type="email" name="n3" required><br><br>
+          </td>
+          <td>
+            <label for="n4">Password</label><br>
+            <input type="password" name="n4" required><br><br>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="n5">Date</label><br>
+            <input type="date" name="n5" required><br><br>
+          </td>
+          <td>
+            <label for="n6">Time</label><br>
+            <input type="time" name="n6" required><br><br>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="submit" name="n7">
+          </td>
+          <td>
+            <input type="reset" name="reset">
+          </td>
+        </tr>
+      </table>
     </form>
 
     <br><br>
+
+    <form>
+      <label for="gender">Gender</label><br>
+      Male <input type="radio" name="gender" value="male">
+      Female<input type="radio" name="gender" value="female">
+<br>
+      <label for="eng">English</label>
+      <input type="checkbox" name="eng" checked disabled><br>
+      <label for="mar">Marathi</label>
+      <input type="checkbox" name="mar"><br>
+      <label for="hin">Hindi</label>
+      <input type="checkbox" name="hin"><br>
+      <br>
+      <label for="resume">Resume</label>
+      <input type="file" name="resume"><br><br>
+
+      <input type="color" name="col">
+
+      <input type="submit" name="sub">
+    </form>
   </body>
 </html>
