@@ -8,6 +8,10 @@
 
         <style>
 
+            html{
+                scroll-behavior: smooth;
+            }
+
             body{
                 padding: 0;
                 margin: 0;
@@ -100,6 +104,7 @@
                 width: 80%;
                 margin: auto;
                 padding-top: 50px;
+                padding-bottom: 50px;
                 padding-left: 20px;
                 padding-right: 20px;
                 border-radius: 10px 10px 0px 0px;
@@ -181,6 +186,38 @@
                 padding-bottom: 100px;
             }
 
+            .drawer{
+                position: fixed;
+                top: 0;
+                left: -24%;
+                height: 100%;
+                width: 25%;
+                z-index: 9999;
+                padding-top: 20px;
+                transition: 0.5s;
+            }
+            .drawer:hover{
+                background: linear-gradient(to right, rgba(0,0,0,0.2), rgba(0,0,0,0.8));
+                left: 0;
+                transition: 0.5s;
+            }
+            .drawer a{
+                display: block;
+                color: white;
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 20px;
+                font-weight: 600;
+                padding: 20px;
+                text-align: right;
+                text-decoration: none;
+                transition: 0.5s;
+            }
+            .drawer a:hover{
+                background-color: white;
+                color: black;
+                transition: 0.2s;
+            }
+
         </style>
     </head>
 
@@ -204,7 +241,7 @@
                     </div>
                 </section>
 
-                <section class="w-1">
+                <section class="w-1" id="1">
                     <div class="w1">
                         <div class="head">
                             <h2 class="intro">Taj Mahal</h2>
@@ -233,7 +270,7 @@
                     </div>
                 </section>
 
-                <section class="w-2">
+                <section class="w-2" id="2">
                     <div class="w1">
                         <div class="head">
                             <h2 class="intro">Colosseum</h2>
@@ -262,7 +299,7 @@
                     </div>
                 </section>
 
-                <section class="w-3">
+                <section class="w-3" id="3">
                     <div class="w1">
                         <div class="head">
                             <h2 class="intro">Chichen Itza</h2>
@@ -291,7 +328,7 @@
                     </div>
                 </section>
 
-                <section class="w-4">
+                <section class="w-4" id="4">
                     <div class="w1">
                         <div class="head">
                             <h2 class="intro">Machu Picchu</h2>
@@ -320,7 +357,7 @@
                     </div>
                 </section>
 
-                <section class="w-5">
+                <section class="w-5" id="5">
                     <div class="w1">
                         <div class="head">
                             <h2 class="intro">Christ The Redeemer</h2>
@@ -349,7 +386,7 @@
                     </div>
                 </section>
 
-                <section class="w-6">
+                <section class="w-6" id="6">
                     <div class="w1">
                         <div class="head">
                             <h2 class="intro">Petra</h2>
@@ -378,7 +415,7 @@
                     </div>
                 </section>
 
-                <section class="w-7">
+                <section class="w-7" id="7">
                     <div class="w1">
                         <div class="head">
                             <h2 class="intro">Great Wall Of China</h2>
@@ -399,6 +436,16 @@
             </li>
 
         </ol>
+
+        <div class="drawer">
+            <a href="#1">Taj Mahal</a>
+            <a href="#2">Colosseum</a>
+            <a href="#3">Chichen Itza</a>
+            <a href="#4">Machu Picchu</a>
+            <a href="#5">Christ The Redeemer</a>
+            <a href="#6">Petra</a>
+            <a href="#7">Great Wall Of China</a>
+        </div>
 
     </body>
 </html>
