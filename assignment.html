@@ -110,7 +110,7 @@
                 background-color: white;
                 border-radius: 10px 10px 0px 0px;
             }
-            .body img{
+            .img-drawer-c img{
                 width: 40%;
                 float: left;
                 padding-right: 10px;
@@ -218,7 +218,55 @@
                 transition: 0.5s;
             }
 
+            .img-drawer{
+                position: fixed;
+                top: 0;
+                right: 0;
+                height: 100%;
+                width: 75%;
+                z-index: 9999;
+                padding-top: 20px;
+                transition: 0.5s;
+                background: linear-gradient(to right, rgba(0,0,0,0.2), rgba(0,0,0,0.8));
+            }
+            .img-drawer img{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 80%;
+            }
+
+            .loader{
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+            }
+            .loader .loader-spin{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                animation: loaderroll 1s linear infinite;
+            }
+            @keyframes loaderroll
+            {
+                0%{transform: rotate(0deg)}
+                100%{transform: rotate(360deg)}
+            }
+            .loader .loader-ico{
+                width: 20px;
+                height: 20px;
+                border: 5px solid greenyellow;
+                border-radius: 50%;
+                border-bottom-color: transparent;
+            }
+
         </style>
+
     </head>
 
     <body>
@@ -249,7 +297,9 @@
                         </div>
 
                         <div class="body">
-                            <img src="w1.jpg">
+                            <div class="img-drawer-c" id="im1">
+                                <img src="w1.jpg">
+                            </div>
                             <p>The Taj Mahal is located on the right bank of the Yamuna River in a vast Mughal garden that encompasses nearly 17 hectares, in the Agra District in Uttar Pradesh. It was built by Mughal Emperor Shah Jahan in memory of his wife Mumtaz Mahal with construction starting in 1632 AD and completed in 1648 AD, with the mosque, the guest house and the main gateway on the south, the outer courtyard and its cloisters were added subsequently and completed in 1653 AD. The existence of several historical and Quaranic inscriptions in Arabic script have facilitated setting the chronology of Taj Mahal. For its construction, masons, stone-cutters, inlayers, carvers, painters, calligraphers, dome builders and other artisans were requisitioned from the whole of the empire and also from the Central Asia and Iran. Ustad-Ahmad Lahori was the main architect of the Taj Mahal.<br><br>
             
                                 The Taj Mahal is considered to be the greatest architectural achievement in the whole range of Indo-Islamic architecture. Its recognised architectonic beauty has a rhythmic combination of solids and voids, concave and convex and light shadow; such as arches and domes further increases the aesthetic aspect. The colour combination of lush green scape reddish pathway and blue sky over it show cases the monument in ever changing tints and moods. The relief work in marble and inlay with precious and semi precious stones make it a monument apart. <br><br>
@@ -278,7 +328,9 @@
                         </div>
 
                         <div class="body">
-                            <img src="w2.jpg">
+                            <div class="img-drawer-c" id="im2">
+                                <img src="w2.jpg">
+                            </div>
                             <p>Colosseum, also called Flavian Amphitheatre, giant amphitheatre built in Rome under the Flavian emperors. Construction of the Colosseum was begun sometime between 70 and 72 CE during the reign of Vespasian. It is located just east of the Palatine Hill, on the grounds of what was Nero's Golden House. The artificial lake that was the centrepiece of that palace complex was drained, and the Colosseum was sited there, a decision that was as much symbolic as it was practical. Vespasian, whose path to the throne had relatively humble beginnings, chose to replace the tyrannical emperor's private lake with a public amphitheatre that could host tens of thousands of Romans.<br><br>
             
                                 The structure was officially dedicated in 80 CE by Titus in a ceremony that included 100 days of games. Later, in 82 CE, Domitian completed the work by adding the uppermost story. Unlike earlier amphitheatres, which were nearly all dug into convenient hillsides for extra support, the Colosseum is a freestanding structure of stone and concrete, using a complex system of barrel vaults and groin vaults and measuring 620 by 513 feet (189 by 156 metres) overall. Three of the arena's stories are encircled by arcades framed on the exterior by engaged columns in the Doric, Ionic, and Corinthian orders; the structure's rising arrangement of columns became the basis of the Renaissance codification known as the assemblage of orders. The main structural framework and facade are travertine, the secondary walls are volcanic tufa, and the inner bowl and the arcade vaults are concrete. <br><br>
@@ -307,7 +359,9 @@
                         </div>
 
                         <div class="body">
-                            <img src="w3.jpg">
+                            <div class="img-drawer-c" id="im3">
+                                <img src="w3.jpg">
+                            </div>
                             <p>The Taj Mahal is located on the right bank of the Yamuna River in a vast Mughal garden that encompasses nearly 17 hectares, in the Agra District in Uttar Pradesh. It was built by Mughal Emperor Shah Jahan in memory of his wife Mumtaz Mahal with construction starting in 1632 AD and completed in 1648 AD, with the mosque, the guest house and the main gateway on the south, the outer courtyard and its cloisters were added subsequently and completed in 1653 AD. The existence of several historical and Quaranic inscriptions in Arabic script have facilitated setting the chronology of Taj Mahal. For its construction, masons, stone-cutters, inlayers, carvers, painters, calligraphers, dome builders and other artisans were requisitioned from the whole of the empire and also from the Central Asia and Iran. Ustad-Ahmad Lahori was the main architect of the Taj Mahal.<br><br>
             
                                 The Taj Mahal is considered to be the greatest architectural achievement in the whole range of Indo-Islamic architecture. Its recognised architectonic beauty has a rhythmic combination of solids and voids, concave and convex and light shadow; such as arches and domes further increases the aesthetic aspect. The colour combination of lush green scape reddish pathway and blue sky over it show cases the monument in ever changing tints and moods. The relief work in marble and inlay with precious and semi precious stones make it a monument apart. <br><br>
@@ -336,7 +390,9 @@
                         </div>
 
                         <div class="body">
-                            <img src="w4.jpeg">
+                            <div class="img-drawer-c" id="im4">
+                                <img src="w4.jpeg">
+                            </div>
                             <p>Colosseum, also called Flavian Amphitheatre, giant amphitheatre built in Rome under the Flavian emperors. Construction of the Colosseum was begun sometime between 70 and 72 CE during the reign of Vespasian. It is located just east of the Palatine Hill, on the grounds of what was Nero's Golden House. The artificial lake that was the centrepiece of that palace complex was drained, and the Colosseum was sited there, a decision that was as much symbolic as it was practical. Vespasian, whose path to the throne had relatively humble beginnings, chose to replace the tyrannical emperor's private lake with a public amphitheatre that could host tens of thousands of Romans.<br><br>
             
                                 The structure was officially dedicated in 80 CE by Titus in a ceremony that included 100 days of games. Later, in 82 CE, Domitian completed the work by adding the uppermost story. Unlike earlier amphitheatres, which were nearly all dug into convenient hillsides for extra support, the Colosseum is a freestanding structure of stone and concrete, using a complex system of barrel vaults and groin vaults and measuring 620 by 513 feet (189 by 156 metres) overall. Three of the arena's stories are encircled by arcades framed on the exterior by engaged columns in the Doric, Ionic, and Corinthian orders; the structure's rising arrangement of columns became the basis of the Renaissance codification known as the assemblage of orders. The main structural framework and facade are travertine, the secondary walls are volcanic tufa, and the inner bowl and the arcade vaults are concrete. <br><br>
@@ -365,7 +421,9 @@
                         </div>
 
                         <div class="body">
-                            <img src="w5.jpg">
+                            <div class="img-drawer-c" id="im5">
+                                <img src="w5.jpg">
+                            </div>
                             <p>The Taj Mahal is located on the right bank of the Yamuna River in a vast Mughal garden that encompasses nearly 17 hectares, in the Agra District in Uttar Pradesh. It was built by Mughal Emperor Shah Jahan in memory of his wife Mumtaz Mahal with construction starting in 1632 AD and completed in 1648 AD, with the mosque, the guest house and the main gateway on the south, the outer courtyard and its cloisters were added subsequently and completed in 1653 AD. The existence of several historical and Quaranic inscriptions in Arabic script have facilitated setting the chronology of Taj Mahal. For its construction, masons, stone-cutters, inlayers, carvers, painters, calligraphers, dome builders and other artisans were requisitioned from the whole of the empire and also from the Central Asia and Iran. Ustad-Ahmad Lahori was the main architect of the Taj Mahal.<br><br>
             
                                 The Taj Mahal is considered to be the greatest architectural achievement in the whole range of Indo-Islamic architecture. Its recognised architectonic beauty has a rhythmic combination of solids and voids, concave and convex and light shadow; such as arches and domes further increases the aesthetic aspect. The colour combination of lush green scape reddish pathway and blue sky over it show cases the monument in ever changing tints and moods. The relief work in marble and inlay with precious and semi precious stones make it a monument apart. <br><br>
@@ -394,7 +452,9 @@
                         </div>
 
                         <div class="body">
-                            <img src="w6.jpg">
+                            <div class="img-drawer-c" id="im6">
+                                <img src="w6.jpg">
+                            </div>
                             <p>Colosseum, also called Flavian Amphitheatre, giant amphitheatre built in Rome under the Flavian emperors. Construction of the Colosseum was begun sometime between 70 and 72 CE during the reign of Vespasian. It is located just east of the Palatine Hill, on the grounds of what was Nero's Golden House. The artificial lake that was the centrepiece of that palace complex was drained, and the Colosseum was sited there, a decision that was as much symbolic as it was practical. Vespasian, whose path to the throne had relatively humble beginnings, chose to replace the tyrannical emperor's private lake with a public amphitheatre that could host tens of thousands of Romans.<br><br>
             
                                 The structure was officially dedicated in 80 CE by Titus in a ceremony that included 100 days of games. Later, in 82 CE, Domitian completed the work by adding the uppermost story. Unlike earlier amphitheatres, which were nearly all dug into convenient hillsides for extra support, the Colosseum is a freestanding structure of stone and concrete, using a complex system of barrel vaults and groin vaults and measuring 620 by 513 feet (189 by 156 metres) overall. Three of the arena's stories are encircled by arcades framed on the exterior by engaged columns in the Doric, Ionic, and Corinthian orders; the structure's rising arrangement of columns became the basis of the Renaissance codification known as the assemblage of orders. The main structural framework and facade are travertine, the secondary walls are volcanic tufa, and the inner bowl and the arcade vaults are concrete. <br><br>
@@ -423,7 +483,9 @@
                         </div>
 
                         <div class="body">
-                            <img src="w7.jpg">
+                            <div class="img-drawer-c" id="im7">
+                                <img src="w7.jpg">
+                            </div>
                             <p>The Taj Mahal is located on the right bank of the Yamuna River in a vast Mughal garden that encompasses nearly 17 hectares, in the Agra District in Uttar Pradesh. It was built by Mughal Emperor Shah Jahan in memory of his wife Mumtaz Mahal with construction starting in 1632 AD and completed in 1648 AD, with the mosque, the guest house and the main gateway on the south, the outer courtyard and its cloisters were added subsequently and completed in 1653 AD. The existence of several historical and Quaranic inscriptions in Arabic script have facilitated setting the chronology of Taj Mahal. For its construction, masons, stone-cutters, inlayers, carvers, painters, calligraphers, dome builders and other artisans were requisitioned from the whole of the empire and also from the Central Asia and Iran. Ustad-Ahmad Lahori was the main architect of the Taj Mahal.<br><br>
             
                                 The Taj Mahal is considered to be the greatest architectural achievement in the whole range of Indo-Islamic architecture. Its recognised architectonic beauty has a rhythmic combination of solids and voids, concave and convex and light shadow; such as arches and domes further increases the aesthetic aspect. The colour combination of lush green scape reddish pathway and blue sky over it show cases the monument in ever changing tints and moods. The relief work in marble and inlay with precious and semi precious stones make it a monument apart. <br><br>
@@ -438,14 +500,48 @@
         </ol>
 
         <div class="drawer">
-            <a href="#1">Taj Mahal</a>
-            <a href="#2">Colosseum</a>
-            <a href="#3">Chichen Itza</a>
-            <a href="#4">Machu Picchu</a>
-            <a href="#5">Christ The Redeemer</a>
-            <a href="#6">Petra</a>
-            <a href="#7">Great Wall Of China</a>
+            <a href="#1" id="a1">Taj Mahal</a>
+            <a href="#2" id="a2">Colosseum</a>
+            <a href="#3" id="a3">Chichen Itza</a>
+            <a href="#4" id="a4">Machu Picchu</a>
+            <a href="#5" id="a5">Christ The Redeemer</a>
+            <a href="#6" id="a6">Petra</a>
+            <a href="#7" id="a7">Great Wall Of China</a>
         </div>
 
+        <div class="loader" id="loader"><div class="loader-spin"><div class="loader-ico"></div></div></div>
+
+        <script>
+
+            window.addEventListener("load",
+                ()=>{document.getElementById("loader").style.display = "none";}
+            );
+
+            var couElem = 1;
+            while(couElem<=7)
+            {
+                addEve(couElem);
+                couElem++;
+            }
+
+            function addEve(couElem)
+            {
+                var e1 = document.getElementById("a"+couElem);
+                var e2 = document.getElementById("a"+couElem);
+                e1.addEventListener("mouseenter", ()=>{showImg(couElem);});
+                e2.addEventListener("mouseleave", ()=>{hideImg(couElem);});
+            }
+
+            function showImg(a)
+            {
+                var elem = document.getElementById("im"+a);
+                elem.setAttribute("class", "img-drawer");   
+            }
+            function hideImg(a)
+            {
+                var elem = document.getElementById("im"+a);
+                elem.setAttribute("class", "img-drawer-c");   
+            }
+        </script>
     </body>
 </html>
