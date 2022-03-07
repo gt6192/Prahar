@@ -362,7 +362,7 @@
         <tr>
           <td>
             <label for="n1">Name</label><br>
-            <input type="text" name="n1" value="Pratik" required readonly><br><br>
+            <input type="text" name="n1" placeholder="Name...." required><br><br>
           </td>
           <td> 
             <label for="n2">Age</label><br>
@@ -417,7 +417,18 @@
       <label for="resume">Resume</label>
       <input type="file" name="resume"><br><br>
 
-      <input type="color" name="col">
+      <label for="country">Country</label>
+      <select name="country">
+        <option value="91">India</option>
+        <option value="1">USA</option>
+        <option>Italy</option>
+      </select><br><br>
+
+      <textarea rows="4" cols="20" name="texta">Address</textarea><br><br>
+
+      <input type="color" name="col"><br><Br>
+
+      <input type="range" min="18" max="100" name="range">
 
       <input type="submit" name="sub">
     </form>
