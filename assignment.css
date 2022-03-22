@@ -1,0 +1,366 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background: linear-gradient(to right, rgba(0,0,0,0.4),rgba(0,0,0,0.6)), url('header.jpg');
+    background-position: top;
+    background-size: cover;
+}
+
+h1{
+    font-size: 50px;
+    color: white;
+    padding-top: 220px;
+    text-align: center;
+    letter-spacing: 5px;
+    font-family: 'Kanit', sans-serif;
+}
+
+header p{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-bottom: 220px;
+}
+
+.scroll-down{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    letter-spacing: 20px;
+}
+
+.sec-intro{
+    padding-top: 150px;
+    padding-bottom: 150px;
+    width: 80%;
+    margin: auto;
+}
+.sec-intro div{
+    border-left: 8px solid rgb(70, 70, 70);
+    padding: 10px;
+}
+.sec-intro .intro{
+    color: rgb(42, 42, 42);
+    font-size: 60px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    letter-spacing: 5px;
+    padding-bottom: 20px;
+}
+.sec-intro .author{
+    color: rgb(70, 70, 70);
+    font-size: 20px;
+    letter-spacing: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+.head{
+    border-left: 8px solid rgb(255, 255, 255);
+    padding: 10px;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 200px;
+}
+.intro{
+    color: rgb(255, 255, 255);
+    font-size: 80px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    letter-spacing: 10px;
+    padding-bottom: 20px;
+}
+.country{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    letter-spacing: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+.body{
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: white;
+    border-radius: 10px 10px 0px 0px;
+}
+.img-drawer-c img{
+    width: 40%;
+    float: left;
+    padding-right: 10px;
+}
+.body p{
+    text-align: justify;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 30px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(70, 70, 70);
+}
+
+.w-1 .w1{
+    background: linear-gradient(to right, rgba(0,0,0,0.5),rgba(0,0,0,0.8)), url('w1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 200px;
+    padding-bottom: 100px;
+}
+
+.w-2 .w1{
+    background: linear-gradient(to bottom, rgba(0,0,0,0.4),rgba(0,0,0,0.8)), url('w2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 200px;
+    padding-bottom: 100px;
+}
+
+.w-3 .w1{
+    background: linear-gradient(to bottom, rgba(0,0,0,0.4),rgba(0,0,0,0.8)), url('w3.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 200px;
+    padding-bottom: 100px;
+}
+
+.w-4 .w1{
+    background: linear-gradient(to bottom, rgba(0,0,0,0.4),rgba(0,0,0,0.8)), url('w4.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 200px;
+    padding-bottom: 100px;
+}
+
+.w-5 .w1{
+    background: linear-gradient(to bottom, rgba(0,0,0,0.4),rgba(0,0,0,0.8)), url('w5.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 200px;
+    padding-bottom: 100px;
+}
+
+.w-6 .w1{
+    background: linear-gradient(to bottom, rgba(0,0,0,0.4),rgba(0,0,0,0.8)), url('w6.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 200px;
+    padding-bottom: 100px;
+}
+
+.w-7 .w1{
+    background: linear-gradient(to bottom, rgba(0,0,0,0.4),rgba(0,0,0,0.8)), url('w7.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 200px;
+    padding-bottom: 100px;
+}
+
+.drawer{
+    position: fixed;
+    top: 0;
+    left: -23%;
+    height: 100%;
+    width: 25%;
+    z-index: 9999;
+    transition: 0.5s;
+}
+.drawer:hover{
+    left: 0;
+    transition: 0.5s;
+}
+.drawer .cont{
+    padding-top: 20px;
+    background: linear-gradient(to right, rgba(0,0,0,0.2), rgba(0,0,0,0.8));
+    height: 100%;
+    width: 90%;
+}
+.drawer a{
+    display: block;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px;
+    text-align: right;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.drawer a:hover{
+    transition: 0.5s;
+    color: black;
+    background-color: white;
+}
+.drawer .arrow-cont{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.6), rgba(0,0,0,0.9));
+    padding: 10px 10px;
+    border-radius: 00px 50px 50px 00px;
+}
+.drawer .arrow{
+    display: inline-block;
+    padding: 3px;
+    border: solid white;
+    border-width: 00px 6px 6px 00px;
+    transform: rotate(-45deg);
+}
+
+
+.img-drawer{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 75%;
+    z-index: 9999;
+    padding-top: 20px;
+    transition: 0.5s;
+    background: linear-gradient(to right, rgba(0,0,0,0.0), rgba(0,0,0,0.6), rgba(0,0,0,0.8));
+}
+.img-drawer img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+}
+.loader .loader-spin{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: loaderroll 1s linear infinite;
+}
+@keyframes loaderroll
+{
+    0%{transform: rotate(0deg)}
+    100%{transform: rotate(360deg)}
+}
+.loader .loader-ico{
+    width: 20px;
+    height: 20px;
+    border: 5px solid greenyellow;
+    border-radius: 50%;
+    border-bottom-color: transparent;
+}
+
+
+/* Notification Drawer */
+.notification-drawer{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50px;
+    font-family: 'Roboto', sans-serif;
+    transition: 0.5s;
+}
+.notification-drawer:hover{
+    width: 400px;
+    height: 600px;
+    border-radius: 10px;
+    background: linear-gradient(rgb(101, 224, 255, 0.6), rgb(101, 224, 255, 0.6));
+    overflow: scroll;
+    transition: 0.5s;
+}
+.notification-drawer::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    background: transparent;
+}
+.notification-drawer:hover .notification-button{
+    border-radius: 50px 50px 10px 50px;
+    transition: 0.5s;
+}
+.notification-drawer .cont{
+    margin: 10px;
+    visibility: hidden;
+}
+.notification-drawer:hover .cont{
+    visibility: visible;
+    transition-delay: 0.5s;
+}
+.notification-drawer .cont .single-note{
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.notification-drawer .cont .single-note i{
+    float: right;
+    font-style: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+.notification-drawer .cont .single-note p{
+    color: rgb(88, 88, 88);
+    font-weight: bold;
+}
+.notification-drawer .cont .single-note span{
+    color: gray;
+    font-size: 80%;
+}
+.notification-drawer .cont .single-note div{
+    max-height: 100px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+.notification-drawer .cont .single-note div:hover{
+    max-height: unset;
+}
+.notification-drawer .cont .single-note img{
+    width: 100%;
+}
+.notification-button{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 50%;
+    background-color: rgb(17, 81, 255);
+    transition: 0.5s;
+}
+.notification-button p{
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: context-menu;
+}
