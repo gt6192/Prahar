@@ -6,8 +6,8 @@
 
         <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@900&family=Roboto:wght@500;900&display=swap" rel="stylesheet">
 
-        <link rel="stylesheet" type="text/css" href="assignment.css">
-
+        <link rel="stylesheet" type="text/css" href="css/assignment.css">
+        <script src="js/assignment.js"></script>
     </head>
 
     <body>
@@ -242,54 +242,23 @@
 
         <div class="drawer">
             <div class="cont">
-                <a href="#1" id="a1">Taj Mahal</a>
-                <a href="#2" id="a2">Colosseum</a>
-                <a href="#3" id="a3">Chichen Itza</a>
-                <a href="#4" id="a4">Machu Picchu</a>
-                <a href="#5" id="a5">Christ The Redeemer</a>
-                <a href="#6" id="a6">Petra</a>
-                <a href="#7" id="a7">Great Wall Of China</a>
+                <a href="#1" id="a1" onclick="gt_add_notification('Clicked on wonder 1', 'You clicked on taj mahal')">Taj Mahal</a>
+                <a href="#2" id="a2" onclick="gt_add_notification('Clicked on wonder 2', 'You clicked on Colosium')">Colosseum</a>
+                <a href="#3" id="a3" onclick="gt_add_notification('Clicked on wonder 3', 'You clicked on Chichen Itza')">Chichen Itza</a>
+                <a href="#4" id="a4" onclick="gt_add_notification('Clicked on wonder 4', 'You clicked on Machu Picchu')">Machu Picchu</a>
+                <a href="#5" id="a5" onclick="gt_add_notification('Clicked on wonder 5', 'You clicked on Christ The Redeemer')">Christ The Redeemer</a>
+                <a href="#6" id="a6" onclick="gt_add_notification('Clicked on wonder 6', 'You clicked on Petra')">Petra</a>
+                <a href="#7" id="a7" onclick="gt_add_notification('Clicked on wonder 7', 'You clicked on Great wall of china')">Great Wall Of China</a>
             </div>
             <div class="arrow-cont"><i class="arrow"></i></div>
         </div>
 
         <div class="notification-drawer">
-            <div class="cont">
-                <div class="single-note">
-                    <i>x</i>
-                    <p>Pratik added a new post.</p>
-                    <span>Hi guys today we are gonna learn about some technical stuff.</span>
-                </div>
-                <div class="single-note">
-                    <i>x</i>
-                    <p>Pratik started a new topic.</p>
-                    <span>Hi guys today we are gonna learn about some technical stuff. Hi guys today we are gonna learn about some technical stuff.</span>
-                    <div><img src="w1.jpg"></div>
-                </div>
-                <div class="single-note">
-                    <i>x</i>
-                    <p>Pratik added a new post.</p>
-                    <span>Hi guys today we are gonna learn about some technical stuff.</span>
-                </div>
-                <div class="single-note">
-                    <i>x</i>
-                    <p>Pratik started a new topic.</p>
-                    <span>Hi guys today we are gonna learn about some technical stuff. Hi guys today we are gonna learn about some technical stuff.</span>
-                </div>
-                <div class="single-note">
-                    <i>x</i>
-                    <p>Pratik added a new post.</p>
-                    <span>Hi guys today we are gonna learn about some technical stuff.</span>
-                    <div><img src="w2.jpg"></div>
-                </div>
-                <div class="single-note">
-                    <i>x</i>
-                    <p>Pratik started a new topic.</p>
-                    <span>Hi guys today we are gonna learn about some technical stuff. Hi guys today we are gonna learn about some technical stuff.</span>
-                </div>
+            <div class="cont" id="gt-cont">
+
             </div>
             <div class="notification-button">
-                <p>6</p>
+                <p id="notification-button-count">0</p>
             </div>
         </div>
 

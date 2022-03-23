@@ -2,18 +2,13 @@ html{
     scroll-behavior: smooth;
 }
 
-body{
-    padding: 0;
-    margin: 0;
-}
-
 *{
     margin: 0;
     padding: 0;
 }
 
 header{
-    background: linear-gradient(to right, rgba(0,0,0,0.4),rgba(0,0,0,0.6)), url('header.jpg');
+    background: linear-gradient(to right, rgba(0,0,0,0.4),rgba(0,0,0,0.6)), url('../header.jpg');
     background-position: top;
     background-size: cover;
 }
@@ -115,7 +110,7 @@ header p{
 }
 
 .w-1 .w1{
-    background: linear-gradient(to right, rgba(0,0,0,0.5),rgba(0,0,0,0.8)), url('w1.jpg');
+    background: linear-gradient(to right, rgba(0,0,0,0.5),rgba(0,0,0,0.8)), url('../w1.jpg');
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -124,7 +119,7 @@ header p{
 }
 
 .w-2 .w1{
-    background: linear-gradient(to bottom, rgba(0,0,0,0.4),rgba(0,0,0,0.8)), url('w2.jpg');
+    background: linear-gradient(to bottom, rgba(0,0,0,0.4),rgba(0,0,0,0.8)), url('../w2.jpg');
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -133,7 +128,7 @@ header p{
 }
 
 .w-3 .w1{
-    background: linear-gradient(to bottom, rgba(0,0,0,0.4),rgba(0,0,0,0.8)), url('w3.jpg');
+    background: linear-gradient(to bottom, rgba(0,0,0,0.4),rgba(0,0,0,0.8)), url('../w3.jpg');
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -142,7 +137,7 @@ header p{
 }
 
 .w-4 .w1{
-    background: linear-gradient(to bottom, rgba(0,0,0,0.4),rgba(0,0,0,0.8)), url('w4.jpeg');
+    background: linear-gradient(to bottom, rgba(0,0,0,0.4),rgba(0,0,0,0.8)), url('../w4.jpeg');
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -151,7 +146,7 @@ header p{
 }
 
 .w-5 .w1{
-    background: linear-gradient(to bottom, rgba(0,0,0,0.4),rgba(0,0,0,0.8)), url('w5.jpg');
+    background: linear-gradient(to bottom, rgba(0,0,0,0.4),rgba(0,0,0,0.8)), url('../w5.jpg');
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -160,7 +155,7 @@ header p{
 }
 
 .w-6 .w1{
-    background: linear-gradient(to bottom, rgba(0,0,0,0.4),rgba(0,0,0,0.8)), url('w6.jpg');
+    background: linear-gradient(to bottom, rgba(0,0,0,0.4),rgba(0,0,0,0.8)), url('../w6.jpg');
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -169,7 +164,7 @@ header p{
 }
 
 .w-7 .w1{
-    background: linear-gradient(to bottom, rgba(0,0,0,0.4),rgba(0,0,0,0.8)), url('w7.jpg');
+    background: linear-gradient(to bottom, rgba(0,0,0,0.4),rgba(0,0,0,0.8)), url('../w7.jpg');
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -292,7 +287,7 @@ header p{
     width: 400px;
     height: 600px;
     border-radius: 10px;
-    background: linear-gradient(rgb(101, 224, 255, 0.6), rgb(101, 224, 255, 0.6));
+    background: linear-gradient(-200deg, rgba(156, 235, 255, 0.6), rgba(17, 81, 255,0.9) 80%);
     overflow: scroll;
     transition: 0.5s;
 }
